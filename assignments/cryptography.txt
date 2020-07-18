@@ -1,0 +1,7 @@
+Create your own method for encrypting data and as a requirement, you need to use the Cesar cypher, somewhere in your implementation.
+
+* Describe the method
+* Give an example for encrypting data with your new method
+* Give an example for decyphered data with your method
+
+This is one assignment.
