@@ -1,0 +1,78 @@
+1. Introduction - What is Network Security?
+1.1. Internet basics. Protocols. Services. Information.
+1.2. What is a vulnerability in a system?
+1.3. What are the risks?
+1.4. What is a hacker, cracker, attacker and etc.
+1.5. Why us? 
+1.6. The difference between tools and intentions.
+
+2. Cryptorgraphy
+2.1. Cryptorgraphy basics
+2.2. Crypto and hash algorithms
+2.3. SSL/TLS
+2.4. Cryptography applications - web-of-trust (PGP),PKI
+2.5. Single sign-on, one-time-passwords
+
+3. Datalink layer сигурност - wired networks
+3.1. PPP
+3.2. Ethernet
+3.3. InfiniBand
+3.4. PON
+3.5. Docsis
+
+4. Datalink layer сигурност - wireless networks
+4.1. 802.11
+4.2. 802.16
+4.3. GPRS/3g/UMTS
+4.4. bluetooth
+
+5. Security in the network and transport layers
+5.1. IPv4, ARP, ICMP
+5.2. IPv6, ICMPv6
+5.3. TCP, UDP, SCTP, DCCP, RDS
+5.4. Routing protocols - BGP & OSPF
+
+6. VPN
+6.1. PPPoE, PPPoA, PPTP
+6.2. IPSEC
+6.3. Managed VPNs
+6.4. SSL/TLS
+6.5. OpenVPN/Tinc/Wireguard
+6.6. Tor
+
+7. Operating systems
+7.1. Basic priciples of the operating systems
+7.2. UNIX/Linux operating systems. PAM and Security modules
+7.3. Windows OS
+
+8. Basic services and the software that implements them
+8.1. DNS
+8.2. SMTP,POP3,IMAP
+8.3. FTP
+8.4. HTTP
+8.5. P2P protocols
+8.6. RPC (soap, upnp, rpc,etc)
+8.7. storage over ip
+8.8. voice/video over ip
+
+9. Auditing/monitoring 
+9.1. Intrusion detection tools
+9.2. Monitoring tools
+9.3. Audit tools
+
+10. Remote administration
+10.1. SNMP,TFTP
+10.2. Telnet, r* services
+10.3. SSH
+10.4. X, RDP, VNC
+10.5. SMS
+
+11. Protective perimeter
+11.1. Packet filters and firewalls, NAT
+11.2. Application level firewalls
+11.3. DMZ
+
+12. Social engineering
+12.1. Basic principals and ideas of Social Engineering
+12.2. Physical security
+12.3. password policy
