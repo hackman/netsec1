@@ -1,0 +1,4 @@
+ISM bands - Industrial Sciantific and Medical radio bands
+Radio spectrum - Electromagnetic waves
+- frequencies lower than around 300 GHz
+- wavelengths longer than about 1 mm

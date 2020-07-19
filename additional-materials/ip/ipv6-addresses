@@ -1,0 +1,18 @@
+::/128          - unspecified
+::/0            - default unicast
+::1/128         - loopback
+fe80::/10       - link local
+fc00::/7        - unique local
+::ffff:0:0/96   - IPv4 mapped IPv6
+::ffff:0:0:0/96 - Stateless IP/ICMP Translation
+64:ff9b::/96    - WellKnown prefix
+2002::/16       - 6to4
+
+
+Use Hex to write cool IPv6 addresses:
+
+  2001:0DB8:0000:CD30:0123:4567:89AB:CDEF
+  BAD:BAD:BAD
+  DEAD:BEEF:DEAD:BEEF:DEAD:BEEF:DEAD:BEEF
+  2001:0DB8:0000:CD30:DEAD:BEEF:DEAD:BEEF
+  BAD:F00
