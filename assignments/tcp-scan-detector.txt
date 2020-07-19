@@ -1,0 +1,54 @@
+Task 1: TCP scan detector - 10-15 points
+
+Write a program in a language of your choice that processes a given pcap file and finds TCP packets in it, with the following features:
+ - Null scan packet - Does not have any flags set (TCP flag header is 0)
+ - Xmas scan packet - Has only the FIN, PSH, and URG flags set, lighting the packet up like a Christmas tree.
+For more information, see the man page on nmap (1). In particular, the -sN and -sX options
+
+For each such packet, print the following fields on STDOUT, separated by a space:
+ - source MAC
+ - destination MAC
+ - ether type (4-digit hex, prepended with 0x)
+ - source IP
+ - destination IP
+ - IP protocol (decimal)
+ - TCP source port (decimal)
+ - TCP destination port (decimal)
+ - scan type (Xmas or Null)
+
+For example:
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57632 443 Xmas
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57633 22 Xmas
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57634 80 Xmas
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57635 23 Xmas
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57636 21 Xmas
+  18:cf:5e:fd:67:2a f8:d1:11:59:1d:6e 0x0800 192.168.111.102 54.152.100.110 6 57637 21 Null
+
+Strictly follow the format of the output. Any deviations, incl. lack of leading zeroes or use of capital letters for hex numbers will be penalized.
+
+It is acceptable for your program to support only packets from Ethernet networks and only with the usual IPv4 encapsulation (ethernet II with ethertype 0x0800).
+Assume that the IP header is 20 bytes and that the IP and TCP checksums are correct.
+
+
+For bonus points:
+1. Note that the IP header can be with dynamic length, other then 20 bytes - 1 bonus point
+  - packets with IP headers of different lengths to be processed like the others. And in them we look for Null and Xmas scan and print the usual fields if we find.
+ 
+2. Calculate and verify the IP header schecksum - 2 bonus points
+  - For packets with bad IP header checksums, print the following
+    Source MAC, Destination MAC, Ether type, "bad_csum"
+    e.g. "18: cf: 5e: fd: 67: 2a f8: d1: 11: 59: 1d: 6e 0x0800 bad_csum"
+
+3. Check the TCP checksum - 2 bonus points
+  - For packages with bad TCP checksum, print the following
+    Source MAC, Destination MAC, Ether type, Source IP, Destination IP, IP proto, "bad_csum"
+    e.g. "18: cf: 5e: fd: 67: 2a f8: d1: 11: 59: 1d: 6e 0x0800 192.168.111.102 54.152.100.110 6 bad_csum"
+
+Reward: 10 points, plus bonuses up to 5 points for any additional functionality.
+
+A file named fn12345.tar.xz is sent, where 12345 is your faculty number containing
+ - source code of the program
+ - readme.txt - a text file that describes how to use the program and how it works
+ - output.txt - output from program execution on the test pcap file *
+
+* The test pcap file can be found here - http://netsec.1h.cx/mod/resource/view.php?id=255

@@ -1,0 +1,4 @@
+Task 1: Create 3 different STP packages and us send the pcap file.
+  * Only the three STP packets should be in the file you have generated
+
+Hint:  http://people.freebsd.org/~syrinx/pktgen/packet_crafting-of2013.pdf

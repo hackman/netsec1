@@ -1,0 +1,19 @@
+Task 1: Find all MAC addresses given to the manufacturer of your network card (wireless or ethernet).
+  * Show your MAC address and describe how you found it
+  * Show how you found the manufacturer
+  * Provide a list of all addresses given to this manufacturer worldwide
+
+Task 2: Find all possible types of media converters (show MINIMUM 3).
+  * Send us links with the description (preferably with a picture) of the Madia Converters you found.
+
+Task 3: Give an example of 3 multicast Ethernet addresses.
+  * Send us 3 multicast Ethernet addresses
+
+Task 4: Describe at least 4 types of media that use Ethernet.
+  * Find information on media that uses Ethernet as the data protocol
+  * Select 4 of them and send them to us
+
+Task 5: Is it possible to have Ethernet in layers 5, 6 or 7 of the OSI model?
+  * Please write a justification why you may or may not have Ethernet on layers 5, 6 or 7 of the OSI model?
+  * If you can have (describe exactly how this would happen).
+  * If you can't have one, would you speculate on how Ethernet can be implemented over another existing protocol, on the Internet
